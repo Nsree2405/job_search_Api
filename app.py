@@ -55,4 +55,6 @@ def index():
     return render_template('index.html',output=final)
 
 if __name__ == '__main__':
-    app.run(debug=True)  
+    app.run(debug=True)
+def handler(event, context):
+    return app(event, context)
