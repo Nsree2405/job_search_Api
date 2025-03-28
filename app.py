@@ -14,7 +14,7 @@
 #             jobs.get_text(problem)
 #             final = jobs.send()
 #             print(final)
-#     return render_template('home.html')
+#     return render_template('index.html')
 
 # if __name__ == '__main__':
 #     app.run(debug=True)  
@@ -27,8 +27,8 @@ problem = ''
 
 
 @app.route('/', methods=['GET', 'POST'])
-def home():
-    return render_template('home.html')
+def index():
+    return render_template('index.html')
 @app.route('/o.html')
 def opportunities():
     return render_template('o.html')
