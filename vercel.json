@@ -1,9 +1,9 @@
 {
   "version": 2,
   "builds": [
-    { "src": "app.py", "use": "@vercel/python", "config": { "entrypoint": "app.py" } }
+    { "src": "index.html", "use": "@vercel/static" }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "home1.html" }
+    { "src": "/(.*)", "dest": "/index.html" }
   ]
 }
