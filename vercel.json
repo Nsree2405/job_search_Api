@@ -4,6 +4,6 @@
     { "src": "app.py", "use": "@vercel/python", "config": { "entrypoint": "app.py" } }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "app.py" }
+    { "src": "/(.*)", "dest": "home1.html" }
   ]
 }
